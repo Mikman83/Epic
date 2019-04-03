@@ -1,0 +1,14 @@
+.main-content {
+
+  &__wrapper {
+    display: flex;
+    padding: 0 3%;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-left: 40px;
+  }
+}

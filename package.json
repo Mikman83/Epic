@@ -1,0 +1,42 @@
+{
+  "name": "Redmond",
+  "version": "1.0.0",
+  "description": "Redmond project.",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack",
+    "build:production": "NODE_ENV=production ./node_modules/.bin/webpack",
+    "start": "./node_modules/.bin/webpack-dev-server"
+  },
+  "author": "Ivlev Michael",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/epixx/start-kit"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "autoprefixer": "^9.0.2",
+    "babel-loader": "^8.0.5",
+    "browser-sync": "^2.14.0",
+    "css-loader": "^2.1.0",
+    "del": "^3.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "postcss-loader": "^3.0.0",
+    "raw-loader": "^1.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "svg-url-loader": "^2.3.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "copy-webpack-plugin": "^5.0.0",
+    "jquery": "^3.3.1",
+    "select2": "^4.0.6-rc.1"
+  }
+}

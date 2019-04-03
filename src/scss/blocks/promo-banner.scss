@@ -1,0 +1,59 @@
+.promo-banner {
+  display: flex;
+  background-color: #f7f8fa;
+  padding: 0 80px;
+
+  &__descr {
+    width: 50%;
+    margin: auto 0;
+
+    &-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 48px;
+      font-weight: bold;
+      margin-top: 0;
+    }
+
+    &-btn {
+      max-width: 280px;
+
+      &-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 2px solid #e5e5e5;
+        background-color: #f7f8fa;
+        width: 100%;
+        padding: 5% 10%;
+
+        &-text {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 16px;
+          font-weight: bold;
+        }
+
+        &-arrow {
+          display: inline-block;
+          background-image: url(../img/catalog-man__collection-btn-arrow.svg);
+          width: 20px;
+          height: 8px;
+          margin-left: 20%;
+        }
+      }
+
+      &-item:hover {
+        border: 2px solid #c1b6a5;
+      }
+    }
+  }
+
+  &__img {
+    width: 50%;
+
+    &-item {
+      max-width: 100%;
+      height: auto;
+      transform: scaleX(-1);
+    }
+  }
+}

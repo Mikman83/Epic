@@ -1,0 +1,50 @@
+.color {
+
+  &__item {
+    display: inline-block;
+
+    &-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 23px;
+      height: 23px;
+      border-radius: 50%;
+      transition: .25s ease-out;
+
+      &:before {
+        content: "";
+        display: block;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+      }
+
+      &:hover,
+      &--active {
+        background-color: #f8ede7;
+        border: 1px solid #e5b194;
+      }
+
+      &--black:before {
+        background-color: #000;
+      }
+
+      &--brown:before {
+        background-color: #ba8a3b;
+      }
+
+      &--yellow:before {
+        background-color: #ebe1b7;
+      }
+
+      &--gray:before {
+        background-color: #aaa;
+      }
+
+      &--blue:before {
+        background-color: #cee2ef;
+      }
+    }
+  }
+}

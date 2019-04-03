@@ -1,0 +1,161 @@
+.product-info {
+  display: flex;
+
+  &--shadow {
+    box-shadow: -1px 1px 5px 1px rgba(0,0,0,0.1);
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex: 0 0 50%;
+  }
+
+  &__inner {
+
+    &--pl {
+      padding-left: 50px;
+    }
+  }
+
+  &__breadcrumbs {
+    margin-top: 10px;
+  }
+
+  &__category {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.64px;
+    color: #ba8a3b;
+  }
+
+  &__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 38px;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  &__price {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+  &__list-color {
+    margin: 40px 0;
+  }
+
+  &__descr {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding-right: 30px;
+      /*line-height: 20px;*/
+
+    &-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 20px;
+    }
+  }
+
+  &__consist {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    padding-right: 30px;
+
+    &-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    & p {
+      margin: 10px 0;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    margin-top: auto;
+    align-items: center;
+
+    &-amount {
+      display: inline-block;
+
+      &-less,
+      &-more {
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+        border: none;
+        background-repeat: no-repeat;
+        background-position: 50% 71%;
+      }
+
+      &-less {
+        background-image: url(../img/minus.svg);
+      }
+
+      &-more {
+        background-image: url(../img/plus.svg);
+      }
+    }
+
+    &-availability {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      min-width: 250px;
+      height: 50px;
+      border: none;
+      background-color: #c1b6a5;
+      color: #fff;
+      margin: 0 40px;
+
+      &--left {
+        margin: 0;
+      }
+    }
+
+    &-favourite {
+      border: none;
+      background-color: transparent;
+      margin: 0 auto;
+    }
+  }
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__miniatures {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    &-wrap {
+      width: 100px;
+      height: 100px;
+      margin: 5px;
+    }
+
+    &-item {
+      max-width: 100%;
+      height: auto;
+      filter: opacity(50%);
+      transition: 0.5s;
+
+      &--active,
+      &:hover {
+        filter: opacity(100%);
+      }
+    }
+  }
+}

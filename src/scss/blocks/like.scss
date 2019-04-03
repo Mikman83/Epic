@@ -1,0 +1,19 @@
+.like {
+  background-image: url(../img/slider-card-favourite.svg);
+  background-size: cover;
+  width: 30px;
+  height: 26px;
+  display: inline-block;
+
+  &--red {
+    background-image: url(../img/slider-card-inner__favorite-hover.svg);
+  }
+
+  &:hover {
+    background-image: url(../img/slider-card-inner__favorite-hover.svg);
+  }
+
+  &--active {
+    background-image: url(../img/slider-card-inner__favorite--active.svg);
+  }
+}

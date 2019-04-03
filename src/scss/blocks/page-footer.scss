@@ -1,0 +1,121 @@
+.page-footer {
+  display: flex;
+  flex-direction: row;
+  padding: 40px 3%;
+  margin-top: 80px;
+  border-top: 1px solid #e5e5e5;
+
+  &__container {
+    padding: 0;
+  }
+
+  &__item1,
+  &__item2,
+  &__item3,
+  &__item4 {
+    width: 25%;
+    display: block;
+  }
+
+  &__item1 {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__item2 {
+    padding-left: 80px;
+  }
+
+  &__item3,
+  &__item4 {
+    padding-left: 160px;
+  }
+
+  &__logo {
+    display: block;
+    width: 45%;
+    margin: 0;
+
+    &-img {
+      max-width: 100%;
+      height: auto;
+      margin: 0;
+    }
+  }
+
+  &__socials {
+    margin: 25px 0;
+
+    &-vk,
+    &-insta,
+    &-fb {
+      display: inline-block;
+      margin: 0 30px 0 0;
+    }
+
+    &-vk,
+    &-fb {
+      margin: 0 30px 2px 0;
+    }
+
+    &-vk {
+      background-image: url(../img/page-footer__socials-vk.svg);
+      width: 42px;
+      height: 24px;
+    }
+
+    &-insta {
+      background-image: url(../img/page-footer__socials-insta.svg);
+      width: 31px;
+      height: 31px;
+    }
+
+    &-fb {
+      background-image: url(../img/page-footer__socials-fb.svg);
+      width: 19px;
+      height: 35px;
+    }
+  }
+
+  &__copyright {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.8px;
+    margin: 0 auto;
+  }
+
+  &__catalog,
+  &__about,
+  &__contacts {
+    list-style: none;
+  }
+
+  &__catalog-item-header,
+  &__catalog-item,
+  &__about-item,
+  &__contacts-item {
+    margin-bottom: 5px;
+  }
+
+  &__catalog-item-link,
+  &__about-item-link,
+  &__contacts-item-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.8px;
+    text-decoration: none;
+    color: #000;
+  }
+
+  &__catalog-item-header,
+  &__about-item-header,
+  &__contacts-item-header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    letter-spacing: 0.8px;
+  }
+}

@@ -1,0 +1,33 @@
+.header-social {
+  width: 30%;
+  display: flex;
+  align-items: center;
+
+  &__fb,
+  &__vk,
+  &__insta {
+    display: inline-block;
+    margin-right: 30px;
+  }
+
+  &__fb {
+    background-image: url(../img/header-social__fb.svg);
+    width: 7px;
+    height: 13px;
+    margin-bottom: 2px;
+  }
+
+  &__vk {
+    background-image: url(../img/header-social__vk.svg);
+    width: 14px;
+    height: 8px;
+    margin-bottom: 2px;
+  }
+
+  &__insta {
+    background-image: url(../img/header-social__insta.svg);
+    width: 12px;
+    height: 12px;
+  }
+
+}

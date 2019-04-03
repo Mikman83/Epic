@@ -1,0 +1,9 @@
+.wrapper {
+  display: flex;
+  padding: 3%;
+
+  &__inner {
+    width: 1000px;
+    margin: auto;
+  }
+}

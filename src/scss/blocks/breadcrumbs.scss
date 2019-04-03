@@ -1,0 +1,35 @@
+.breadcrumbs {
+  margin-top: 40px;
+
+  &__list {
+    list-style: none;
+
+    &--pr {
+      padding-right: 35px;
+    }
+
+    &-item {
+      display: inline-block;
+      font-family: Monserrat, sans-serif;
+      color: #b2b2b2;
+      vertical-align: middle;
+    }
+
+    &-item:not(:last-child):after {
+      content: '';
+      display: inline-block;
+      width: 12px;
+      height: 1px;
+      margin-left: 3px;
+      margin-right: 3px;
+      background-color: #b2b2b2;
+      vertical-align: middle;
+    }
+
+    &-item a {
+      text-decoration: none;
+      font-family: Monserrat, sans-serif;
+      color: #b2b2b2;
+    }
+  }
+}
